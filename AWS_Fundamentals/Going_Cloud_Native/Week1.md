@@ -33,3 +33,17 @@ The AWS Marketplace is a digital catalog with thousands of software listings fro
 These offerings can range from simple web server applications to security, networking business intelligence, databases, DevOps, and media. Many of these applications offer pay-as-you-go or Bring Your Own License (BYOL) models.
 
 Details on the AWS Marketplace can be found at: https://aws.amazon.com/marketplace.
+
+### AWS Infrastructure
+**Regions differ in various aspects**:
+- Latency  
+- Cost  
+- Compliance  
+
+**What is a region?**   
+The AWS Cloud infrastructure is built around Regions and Availability Zones. AWS Regions provide multiple, physically separated, and isolated Availability Zones that are connected with low latency, high throughput, and highly redundant networking.  
+
+As of the time of publication, the AWS Cloud spans 55 Availability Zones within 18 geographic Regions and 1 Local Region around the world. There are announced plans for 15 more Availability Zones and five more Regions in Bahrain, Hong Kong SAR, Sweden, and South Africa; and a second AWS GovCloud Region in the US.  
+
+
+- Services
