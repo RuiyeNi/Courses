@@ -39,6 +39,7 @@ Details on the AWS Marketplace can be found at: https://aws.amazon.com/marketpla
 - Latency  
 - Cost  
 - Compliance  
+- Services
 
 **What is a region?**   
 The AWS Cloud infrastructure is built around Regions and Availability Zones. AWS Regions provide multiple, physically separated, and isolated Availability Zones that are connected with low latency, high throughput, and highly redundant networking.  
@@ -46,4 +47,4 @@ The AWS Cloud infrastructure is built around Regions and Availability Zones. AWS
 As of the time of publication, the AWS Cloud spans 55 Availability Zones within 18 geographic Regions and 1 Local Region around the world. There are announced plans for 15 more Availability Zones and five more Regions in Bahrain, Hong Kong SAR, Sweden, and South Africa; and a second AWS GovCloud Region in the US.  
 
 
-- Services
+
