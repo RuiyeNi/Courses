@@ -46,5 +46,16 @@ The AWS Cloud infrastructure is built around Regions and Availability Zones. AWS
 
 As of the time of publication, the AWS Cloud spans 55 Availability Zones within 18 geographic Regions and 1 Local Region around the world. There are announced plans for 15 more Availability Zones and five more Regions in Bahrain, Hong Kong SAR, Sweden, and South Africa; and a second AWS GovCloud Region in the US.  
 
+### AWS compute services 
+AWS offers a compreshensive portfolios of compute servies that allow you to develope, deploy, run and scale your applications and workloads in the world's most powerful, secure, and innovative compute cloud.   
+
+For example:  
+- Elastic Compute Cloud (EC2)
+- Lightsail
+- Lambda
+- Container Services (ECS)
+  - Fargate  
+  - Elastic Container Service for Kubeetes (EKS)
+
 
 
