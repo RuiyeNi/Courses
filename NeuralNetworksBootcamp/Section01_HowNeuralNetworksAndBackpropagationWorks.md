@@ -82,5 +82,6 @@ The Chain Rule
 - First term: How much is the error changing with respect to the output?
 - Second term: How much is the output changing with respect to the input?
 - Third term: How much is the input changing with respect to the weight?  
+[Nice breakdown of backpropagation.](https://www.jeremyjordan.me/neural-networks-training/)
 
 
