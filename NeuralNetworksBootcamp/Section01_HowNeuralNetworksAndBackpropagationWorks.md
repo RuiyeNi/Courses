@@ -42,3 +42,27 @@
  Percpetron, a single layer architecture, is a linear classifier which works for linearly seperable problem.  
  For XOR problem which is nonliear, multilayer perceptron (MLP) is neeed.   
  
+ ### 5. Activation Functions in Deep Learning  
+ #### Why do we need activations?
+ Real world data cannot be sepearted linearly with a line. Activations functions represent non-linear complex arbitrrary functional mappings between inputs and outputs.  
+ 
+ ### Famous Types of Activation Functions
+ - Sigmoid Activation (gating operations)
+   + scale to a value [0, 1]
+   + Disadvantage:
+    * gradient vanish when input is small
+    * explode when input is big
+    * optimization gets harder because output is not 0 centered (0.5).
+   + Derivative: y(1-y)
+ - Hyperbolic Tan Activation (RNN)
+  + scale to a value [-1, 1] 
+  + Disadvantage: gradient vanish
+  + Advantage: 0 centered, optimization is easier 
+ - ReLU (Rectified Linear Unit) (CNN and hidden layers)
+  + negative -> 0, positie -> no change
+  + Disadvantage: if graients die (turns to 0), ReLU never activate on any input
+ - Leaky ReLU (When ReLU suffers from dead neurons)
+  + alpha to replace 0 in ReLU
+  
+  
+  
