@@ -46,7 +46,7 @@
  #### Why do we need activations?
  Real world data cannot be sepearted linearly with a line. Activations functions represent non-linear complex arbitrrary functional mappings between inputs and outputs.  
  
- ### Famous Types of Activation Functions
+ ### 6. Famous Types of Activation Functions
  - Sigmoid Activation (gating operations)
    + scale to a value [0, 1]
    + Disadvantage:
@@ -55,14 +55,32 @@
     * optimization gets harder because output is not 0 centered (0.5).
    + Derivative: y(1-y)
  - Hyperbolic Tan Activation (RNN)
-  + scale to a value [-1, 1] 
-  + Disadvantage: gradient vanish
-  + Advantage: 0 centered, optimization is easier 
+   + scale to a value [-1, 1] 
+   + Disadvantage: gradient vanish
+   + Advantage: 0 centered, optimization is easier 
  - ReLU (Rectified Linear Unit) (CNN and hidden layers)
-  + negative -> 0, positie -> no change
-  + Disadvantage: if graients die (turns to 0), ReLU never activate on any input
+   + negative -> 0, positie -> no change
+   + Disadvantage: if graients die (turns to 0), ReLU never activate on any input
  - Leaky ReLU (When ReLU suffers from dead neurons)
-  + alpha to replace 0 in ReLU
+   + alpha to replace 0 in ReLU
+   
+### 7. Gradient Descent  
+The Backpropagation
+- Objective: minimize the error by changing the weight   
+- Negative slope: increase w, the loss function is decreasing  
+- Positive slope: increase w, the loss function is increasing  
+
+Weight Update Rule  
+- learning rate: how fast we update the weight, the step size of the udpate  
+- new_weight = old_weight  - learning_rate * gradient
   
-  
-  
+### 8. The Forward Propagation  
+input -> weight -> activation -> output
+
+### 9. Backpropagation
+The Chain Rule  
+- First term: How much is the error changing with respect to the output?
+- Second term: How much is the output changing with respect to the input?
+- Third term: How much is the input changing with respect to the weight?  
+
+
