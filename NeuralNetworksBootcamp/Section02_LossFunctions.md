@@ -38,4 +38,13 @@ if |y - f(x)| <= delta:
 else:
     L(y, f(x)) = delta*|y-f(x)| - 1/2*delta^2 
 ```
-  
+### Binary Cross Entropy Loss  (BCE)
+- used when the output lables have values of 0 or 1
+- can also be used when the output labels have values between 0 and 1
+```python
+L = -1/n Sum_samples Sum_classes[ylog(p) + (1-y)log(1-p)]
+```
+- each sample takes either ylog(p) or (1-y)log(1-p)
+- sum_classes is needed for multi-label classification, e.g. an image has multiple objects  
+
+
