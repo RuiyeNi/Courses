@@ -2,7 +2,9 @@
 **Objective**: minimize the loss between the predictions and actual outputs.
 
 ### Mean Squared Error (MSE)
+```python
 MSE = 1/n*Sum(Y_i -Y^i)^2  
+```
 - Y^i predicted output 
 - Y_i actual output 
 - n minibatch smaples or all training samples  
@@ -19,7 +21,9 @@ MSE = sum(1/n*Sum(Y_i-Y^i)^2)
 Convex, only one minimum. MSE is high for large loss values and decreases as loss approaches 0. 
 
 ### L1 Loss Mean Absolute Error (MAE)
+```python
 MAE = 1/n*sum(|Y_i - Y^i|)  
+```
 
 L2 vs L1:  
 - L2 is more sensitive to outliers than L1. When there is large deviations, the error is big. L2 will try to adjust the model according to the outliers values, even at the expense of other samples.  
