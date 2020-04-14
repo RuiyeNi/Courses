@@ -47,4 +47,61 @@ L = -1/n Sum_samples Sum_classes[ylog(p) + (1-y)log(1-p)]
 - each sample takes either ylog(p) or (1-y)log(1-p)
 - sum_classes is needed for multi-label classification, e.g. an image has multiple objects  
 
+### Cross Entropy Loss (CE) 
+Used for multi-label classifications.
+```python
+J = -1/n(sum(y_ilogy^_i))
+```
+only use the y correponding to the correct label to calculate the loss
+
+### Softmax Function  
+Cross Entorpy loss comes in hand with hand with the softmax layer.
+Softmax layer to get the probability for output label, sums up to 1. 
+```python
+e^zj/sum(e^zk)
+```
+
+### KL Divergence
+Measure how to probability distributs are different. 
+- KL divergence high value, two distributions are different 
+- KL divergence low value, two distributiosn are similar
+- 0, two distributiosn are identical 
+- corss entropy - entropy
+```python
+KL(y|y^) = sum(y_i * log(y_i/y^_i)) >= 0
+```
+never negative, KL is not symmetric, cannot switch y_i and y^_i  
+
+One major use of KL divergence is Variational Autoencoders.
+
+In image classification, KL divergence is equivalent to cross entropy.   
+
+### Contrastive Loss  
+It is **distince-based** loss function (as apposed to prediction error-based loss function).
+```python
+y*d^2 + (1-y)*max(margin - d, 0)^2
+```
+- when y=1, two images are similar pair
+- when y=0, two images are disimilar pair
+- d is the euclidean distance
+- margin is used for confidence. If two images are in a disimilar pair, then their distance should be at least margin, or a loss will be incurred. 
+
+### Hinge Loss  
+Hinge loss is a marginal loss, usually used for SVM, 
+- used when labels are [-1, 1]
+- It penalizes not only wrong predictions, but correct predictions which are not confident enough. 
+- Faster than cross entropy but accuracy is degraded.
+- penalize negative value proportionally
+- introduce confience to the loss with a margin
+- no loss for positive value or value largen than the margin
+
+### Triplet Ranking Loss  
+anchor, positive, negative images
+hard negative: false postive. 
+
+
+
+
+
+
 
