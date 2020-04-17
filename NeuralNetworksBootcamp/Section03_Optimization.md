@@ -13,3 +13,13 @@ pass through all the samples.
   + takes the best of both the batch and stochastic gradient descent
   + perform weight update for a batch of samples
   + take n training samples/per batch to update model
+
+### Exponentially Weighted Average
+V_t = beta*V_t-1 + (1 - beta) & theta_t
+- beta = 0.9, average over 1/(1-0.9)= 2 points
+- bias correction of exponentially weighted average, divide d_t by (1-beta^t)
+
+### Momentum
+Use exponentially moving average to reduce the oscillations in the vertical direction and speed it up in the horizontal direction!  
+Accelerates the SGD in the correct direction and weakens the oscillations, by adding a fraction gamma for the past update vector the new update vector. 
+
