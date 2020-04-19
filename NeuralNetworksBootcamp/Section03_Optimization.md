@@ -23,3 +23,17 @@ V_t = beta*V_t-1 + (1 - beta) & theta_t
 Use exponentially moving average to reduce the oscillations in the vertical direction and speed it up in the horizontal direction!  
 Accelerates the SGD in the correct direction and weakens the oscillations, by adding a fraction gamma for the past update vector the new update vector. 
 
+### RMSProp
+RMSProp is an adaptive learning rate method.  
+- Proposed by Geoff Hinton in his Coursera Class
+- RMSProp divides the learning rate by an exponentially decaying average of squared grdinets
+- Gamma is suggested to be 0.9 and learning rate = 0.001
+- Horizontal direction gets larger learning rate to increase the speed
+- Vertical direction gets smaller learning rate to decrease the speed
+
+### Adam Optimization (Adaptive Moment Estimation) 
+- Learnigng rate is adaptive
+- Stores an exponentially decaying average of past square gradients (Vt)
+- Stores an exponentially decaying average of past gradients (mt)
+
+
