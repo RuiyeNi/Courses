@@ -36,4 +36,7 @@ RMSProp is an adaptive learning rate method.
 - Stores an exponentially decaying average of past square gradients (Vt)
 - Stores an exponentially decaying average of past gradients (mt)
 
+### SWATS - Switching from Adam to SGD
+Start training deep neural network with Adam but then swtich to SGD when certain criteria hits to obtain better generalization power. Adam in some areas does not converge to an optimal solution.
+
 
