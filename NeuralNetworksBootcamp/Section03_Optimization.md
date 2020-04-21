@@ -55,3 +55,21 @@ Decay vs Regularization:
 [Decoupled Weight Decay Reguarlization ICLR 2019](https://arxiv.org/pdf/1711.05101.pdf)
 
 
+### AMSGrad  
+AMSGrad uses the maximum of past squared gradients Vt rather than the expoential average to update the parameters. Employ the previous Vt-1 if it is larger than the current one.  
+AMSGrad seems to perform better than Adam on small datasets, but not generalize well for bigger dataset.  
+
+### Learning Rate Scheduling    
+Reduce the learning rate during training by a factor of 0.8/0.5 every 3 epochs.  
+
+Different learning rate strategies:
+- Constant Learning Rate  
+  - Cons: When the weights are good enough, we don't want to change the too much since some of them are already optimized. 
+- Time-Based Decay  
+  - new learning rate: old_LR/(1+(epoch*decay)) 
+  - e.g. decay factor 0.8
+     + epoch 1: 0.01
+     + epoch 2: 0.01/(1+2*0.8) = 0.0038
+     + epoch 3: 0.01/(1+3*0.8) = 0.001
+- Step Decay (Not a smooth decay)
+- Exponential Decay  (Smooth decay)
