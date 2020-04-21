@@ -52,11 +52,6 @@ Decay vs Regularization:
 - These two are not the same when adding Momentum or using Adam, L2 regularization != Wegiht decay 
 
 ### Decoupling Weight Decay  
-<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
-<embed src="http://yoursite.com/the.pdf">
-<p>This browser does not support PDFs. Please download the PDF to view it: Download PDF.</p>
-</embed>
-</object>
-
+(Decoupled Weight Decay Reguarlization ICLR 2019)[https://arxiv.org/pdf/1711.05101.pdf]
 
 
