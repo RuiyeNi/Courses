@@ -39,4 +39,24 @@ RMSProp is an adaptive learning rate method.
 ### SWATS - Switching from Adam to SGD
 Start training deep neural network with Adam but then swtich to SGD when certain criteria hits to obtain better generalization power. Adam in some areas does not converge to an optimal solution.
 
+### Weight Decay and Regularization
+Adding L2 regularization term to the cost function.  
+E~(W) = E(W) + lambda/2*W^2  
+w <- w - theta(delta(E)/delta(W)) - theta*lambda*W  
+Subtract a little portion of the weight at each step, hence the name decay. 
+
+Decay vs Regularization:
+- Adding the L2 regularization term to the loss function -> L2 regularization  
+- Only modify the weight update rule directly -> Weight decay
+- These two are the same for **vanilla SGD**
+- These two are not the same when adding Momentum or using Adam, L2 regularization != Wegiht decay 
+
+### Decoupling Weight Decay  
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+<embed src="http://yoursite.com/the.pdf">
+<p>This browser does not support PDFs. Please download the PDF to view it: Download PDF.</p>
+</embed>
+</object>
+
+
 
