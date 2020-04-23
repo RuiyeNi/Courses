@@ -9,6 +9,14 @@ One solution.
 - Initialize the weights from a specific range.
 - Take them from a normal distribution with a mean of zero and a standard devicaiton of 1. 
 
+## When all weights are initialized to the same value  
+All weights will get updated with the same value and they will be equal.
+**Symmetry Breaking Problem**  
+
+## Xavier Initialization  
+[Understanding the diffulty of training deep feedforward neural networks 2009](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
+
+
 
 
 
