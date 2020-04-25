@@ -15,7 +15,7 @@ All weights will get updated with the same value and they will be equal.
 
 ### Xavier Initialization (Sigmoid activation, linear)
 [Understanding the diffulty of training deep feedforward neural networks 2009](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)  
-We want the weights to remain in a specific range, so we expect the to have the same variance as the inputs.  
+We want the weights to remain in a specific range, so we expect the output to have the same variance as the inputs.  
 
 ### He Norm Initialization (ReLU activation, nonlinear)
 [Delving deep into rectifiers: surpassing human-level performance on imageNet classification(2015)](https://arxiv.org/pdf/1502.01852.pdf)  
