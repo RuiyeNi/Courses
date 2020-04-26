@@ -26,7 +26,7 @@ x_scale = (x - x_min)/(X_max - X_min)
 **Standardization**  
 x = (x-mean)/std
 
-**Batch Normalization**
+**Batch Normalization**  
 [Batch Normalization](https://arxiv.org/abs/1502.03167)
 
 
