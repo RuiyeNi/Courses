@@ -27,7 +27,14 @@ x_scale = (x - x_min)/(X_max - X_min)
 x = (x-mean)/std
 
 **Batch Normalization**  
-[Batch Normalization](https://arxiv.org/abs/1502.03167)
+[Batch Normalization](https://arxiv.org/abs/1502.03167)  
+Benifits of Batch Normalization  
+- Converges fater and reduced the need for dropout.
+- Allowed the network to normalize a layer into whichever distribution is most optimal for learning, standardization is a special case of normalization. The parameters used for normalization are learnable. 
+- Eliminates the need for a bias for a layer when batch normalization is applied to it.
+
+
+
 
 
 
